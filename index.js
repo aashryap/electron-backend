@@ -26,6 +26,6 @@ app.post('/video/token', (req, res) => {
     }
 })
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log("Server started on port ", PORT);
 });
